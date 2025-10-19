@@ -1,0 +1,855 @@
+{
+  "intents": [
+    {
+      "intent": "emotionally_unwell",
+      "examples": [
+        {
+          "text": "despair"
+        },
+        {
+          "text": "discourage"
+        },
+        {
+          "text": "dispirited"
+        },
+        {
+          "text": "downhearted"
+        },
+        {
+          "text": "emotionally devastated"
+        },
+        {
+          "text": "feeling awful"
+        },
+        {
+          "text": "getting worse"
+        },
+        {
+          "text": "gloom"
+        },
+        {
+          "text": "hopelessness"
+        },
+        {
+          "text": "I am feeling unwell"
+        },
+        {
+          "text": "I feel sad"
+        },
+        {
+          "text": "I'm still not feeling emotionally well"
+        },
+        {
+          "text": "Like to stay alone"
+        },
+        {
+          "text": "moodiness"
+        },
+        {
+          "text": "no"
+        },
+        {
+          "text": "Non feeling well"
+        },
+        {
+          "text": "not good"
+        },
+        {
+          "text": "not so good"
+        },
+        {
+          "text": "unwell"
+        },
+        {
+          "text": "weight loss"
+        },
+        {
+          "text": "worn-out"
+        }
+      ]
+    },
+    {
+      "intent": "feeling_well",
+      "examples": [
+        {
+          "text": "cheerfulness"
+        },
+        {
+          "text": "doing great"
+        },
+        {
+          "text": "emotionally healthy"
+        },
+        {
+          "text": "Feeling great"
+        },
+        {
+          "text": "good"
+        },
+        {
+          "text": "happy"
+        },
+        {
+          "text": "I am fine"
+        },
+        {
+          "text": "in good mental condition"
+        },
+        {
+          "text": "in good shape"
+        },
+        {
+          "text": "optimistic"
+        },
+        {
+          "text": "perfect"
+        },
+        {
+          "text": "yes"
+        }
+      ]
+    },
+    {
+      "intent": "goodbye",
+      "examples": [
+        {
+          "text": "adios"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "bye-bye"
+        },
+        {
+          "text": "goodbye"
+        },
+        {
+          "text": "hasta la vista"
+        },
+        {
+          "text": "have a nice day"
+        },
+        {
+          "text": "I will be back"
+        },
+        {
+          "text": "see you"
+        },
+        {
+          "text": "see you later"
+        },
+        {
+          "text": "see you soon"
+        }
+      ]
+    },
+    {
+      "intent": "Have_Depression",
+      "examples": [
+        {
+          "text": "Do I have depression?"
+        },
+        {
+          "text": "I am depressed"
+        },
+        {
+          "text": "I feel depressed"
+        },
+        {
+          "text": "I might be depressed"
+        },
+        {
+          "text": "I think I have depression"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "depression_symptom",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "depression mood",
+          "synonyms": [
+            "depressed",
+            "depression",
+            "irritable mood",
+            "pessimistic",
+            "sad",
+            "unhappy"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "distress",
+          "synonyms": [
+            "impairment of functioning",
+            "Mucous discharge",
+            "phlegm",
+            "stuffed-up"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "impaired ability to think",
+          "synonyms": [
+            "cannot concentrate",
+            "cannot make decisions",
+            "cannot think"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "loss of interest in almost all activities",
+          "synonyms": [
+            "disinterest",
+            "don't want to do anything",
+            "loss of interest",
+            "loss of pleasure",
+            "no pleasure in anything"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "psychomotor changes",
+          "synonyms": [
+            "agitation",
+            "retardation"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "recurrent thought of death",
+          "synonyms": [
+            "not fear of dying",
+            "suicidal ideation",
+            "suicide",
+            "suicide attempts"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "significant unintentional weight loss",
+          "synonyms": [
+            "cannot eat",
+            "decrease in appetite",
+            "gain weight",
+            "increase in appetite",
+            "lose appetite",
+            "lose weight",
+            "significant unintentional weight gain",
+            "weight gain",
+            "weight loss"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sleep disturbance",
+          "synonyms": [
+            "cannot sleep",
+            "hypersomnia",
+            "insomnia",
+            "lose sleep"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tiredness",
+          "synonyms": [
+            "decrease efficiency",
+            "fatigue",
+            "low energy",
+            "sleepiness",
+            "sleepy"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "worthlessness",
+          "synonyms": [
+            "delusional guilt",
+            "exessive",
+            "feel guilty",
+            "inappropriate guilt"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "taking_antidepressant_drugs",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": [
+            "by no means",
+            "I did not",
+            "nah",
+            "never",
+            "nope",
+            "not at all",
+            "not really",
+            "no way",
+            "of course not"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": [
+            "certainly",
+            "done",
+            "I did",
+            "of course",
+            "of course yes",
+            "yea",
+            "yep",
+            "yup"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else || irrelevant",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_2_1711855995565",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1711861977981",
+      "context": {
+        "depression_symptoms": "@depression_symptom"
+      },
+      "conditions": "@depression_symptom",
+      "event_name": "input",
+      "dialog_node": "handler_10_1711861977982"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "node_5_1711859439649",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "conditions": "#goodbye",
+      "event_name": "generic",
+      "dialog_node": "handler_2_1711859779631",
+      "previous_sibling": "node_10_1711860686987"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_8_1711857023792",
+      "next_step": {
+        "behavior": "skip_all_slots"
+      },
+      "conditions": "#goodbye",
+      "event_name": "generic",
+      "dialog_node": "handler_3_1711859316488"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1711860726774",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1711860726783",
+      "previous_sibling": "handler_8_1711860726783"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "node_10_1711860686987",
+      "next_step": {
+        "behavior": "skip_slot"
+      },
+      "conditions": "#goodbye",
+      "event_name": "generic",
+      "dialog_node": "handler_5_1711860797043"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "That is not a depressive symptom. Are you experiencing any other symptoms? If not, you do not have Depression and you can exit by typing \"Goodbye\"."
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_4_1711861977981",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1711861977982",
+      "previous_sibling": "handler_10_1711861977982"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_9_1711860726774",
+      "event_name": "input",
+      "dialog_node": "handler_8_1711860726783"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "slot_4_1711861977981",
+      "conditions": "#goodbye",
+      "event_name": "filled",
+      "dialog_node": "handler_9_1711868624257",
+      "previous_sibling": "handler_6_1711861977982"
+    },
+    {
+      "type": "frame",
+      "title": "Taking Medication",
+      "parent": "node_5_1711859439649",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1711855995565"
+      },
+      "conditions": "@taking_antidepressant_drugs",
+      "dialog_node": "node_10_1711860686987"
+    },
+    {
+      "type": "standard",
+      "title": "What is your name?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Greetings $name. Are you feeling emotionally well today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "name": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_2_1711855639297"
+    },
+    {
+      "type": "standard",
+      "title": "Goodbye",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"Thank you $name for using our Depression Check System. I hope you have a nice day!\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "source": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2ZnbXZ6dmpudTRoeXk1MWdicWE3azFhaHdmdWlrYXppNmVjbHNqYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3qIzgpZiysvSBaHsNf/giphy.gif",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Additional Resource from Mental Health America: https://www.mhanational.org/find-support-groups"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {
+        "name": "$name"
+      },
+      "conditions": "#goodbye",
+      "dialog_node": "node_2_1711855995565",
+      "previous_sibling": "node_9_1711856810554"
+    },
+    {
+      "type": "standard",
+      "title": "Days of Symptoms",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You might have mild Depression. If you’re feeling depressed, know that you’re far from alone. Research indicates that about 280 million people in the world suffer with depression. There are also a number of steps you can try for yourself to help boost your mood and improve how you feel: https://www.helpguide.org/articles/depression/i-feel-depressed.htm\nIn severe cases, professional treatment may be necessary for recovery."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1711857023792",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1711855995565"
+      },
+      "conditions": "@sys-number >13",
+      "dialog_node": "node_5_1711857846849",
+      "previous_sibling": "handler_3_1711859316488"
+    },
+    {
+      "type": "frame",
+      "title": "Feeling Well",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I'm glad to hear that! Are you currently taking any antidepression medication? "
+              },
+              {
+                "text": "I'm happy that you are feeling well. Are you currently taking any antidepression medication? "
+              },
+              {
+                "text": "This is what I want to hear. Are you currently taking any antidepression medication? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#feeling_well",
+      "dialog_node": "node_5_1711859439649",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Days of Symptoms",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Feelings of sadness can quickly come and go. Please monitor your feelings for the next few days."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1711857023792",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1711855995565"
+      },
+      "conditions": "@sys-number < 14",
+      "dialog_node": "node_6_1711858254973",
+      "previous_sibling": "node_5_1711857846849"
+    },
+    {
+      "type": "frame",
+      "title": "Have Depression",
+      "parent": "node_9_1711856810554",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "true",
+      "dialog_node": "node_8_1711857023792"
+    },
+    {
+      "type": "standard",
+      "title": "Not Feeling Well",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How are you feeling now? Is there any psychological symptoms that you are worry about?"
+              },
+              {
+                "text": "I very sad to hear that you are not feeling well. Is there any emotional feelings or thoughts that you are concerned about?"
+              },
+              {
+                "text": "I'm very sorry to hear that. What are you feeling now?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#emotionally_unwell",
+      "dialog_node": "node_9_1711856810554",
+      "previous_sibling": "node_5_1711859439649"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "How many days has the symptom persist? (Please indicate exact days of symptoms)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1711857023792",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_5_1711857846849"
+      },
+      "conditions": "@depression_symptom",
+      "dialog_node": "response_3_1711858575472",
+      "previous_sibling": "response_6_1711857495126"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1711858254973",
+      "disabled": true,
+      "dialog_node": "response_3_1711869054417"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Please call the National Suicide Prevention Lifeline in the U.S. at 1-800-273-8255. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1711857023792",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1711855995565"
+      },
+      "conditions": "@depression_symptom:(recurrent thought of death)",
+      "dialog_node": "response_6_1711857495126",
+      "previous_sibling": "slot_4_1711861977981"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Antidepressants can cause unpleasant side effects. Signs and symptoms such as nausea, weight gain or sleep problems can be common initially. For many people, these improve within weeks of starting an antidepressant. In some cases, however, antidepressants cause side effects that don't go away. Please seek professional help if the side effects get worse.  "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1711860686987",
+      "conditions": "@taking_antidepressant_drugs:yes",
+      "dialog_node": "response_6_1711860909906",
+      "previous_sibling": "response_9_1711860725461"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Excellent!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1711860686987",
+      "conditions": "@taking_antidepressant_drugs:no",
+      "dialog_node": "response_9_1711860725461",
+      "previous_sibling": "slot_9_1711860726774"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_8_1711857023792",
+      "variable": "$depression_symptoms",
+      "dialog_node": "slot_4_1711861977981",
+      "previous_sibling": "node_6_1711858254973"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1711860686987",
+      "dialog_node": "slot_9_1711860726774",
+      "previous_sibling": "handler_5_1711860797043"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. My name is Mr. Dumbo. I'm here to identify Depression symptoms and recommend the treatment for Depression. May I have your name? "
+              },
+              {
+                "text": "My name is Ms. Diagnostic. I'm here to identify Depression symptoms and recommend the treatment for Depression. May I have your name? "
+              },
+              {
+                "text": "Welcome to the secret Chatbot. I'm here to identify Depression symptoms and recommend the treatment for Depression. May I have your name? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "source": "https://www.indianext.co.in/wp-content/uploads/2022/05/chatbot-illustration-1.jpeg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "alkgjlklfad"
+    },
+    {
+      "text": "hi"
+    },
+    {
+      "text": "leg"
+    }
+  ],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "generative_ai": {
+      "slot_filling": {
+        "enabled": false
+      }
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above",
+      "use_connect_to_support_prompt": "Connect to support",
+      "single_answer_clarification_prompt": "Something else"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "language": "en",
+  "description": "Mr. Dumbo bot provides treatment recommendations based on the depression symptoms when there are no symptoms.",
+  "name": "Depression Symptoms Check"
+}
