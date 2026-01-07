@@ -1,2 +1,1 @@
-# project1
-# project1
+Use IBM Watson Assistant to build a chatbot that screens users for potential symptoms of depression based on DSM-5 criteria. The chatbot guides users through a conversational flow, asks about emotions and medication use, and provides feedback or mental health resources depending on responses. Through iterative testing and improvements, the project focused on enhancing natural language understanding, personalization, and response accuracy to make mental health support more accessible and user-friendly. Please see the report in Github.
